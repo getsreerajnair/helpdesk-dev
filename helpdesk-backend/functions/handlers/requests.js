@@ -10,7 +10,7 @@ exports.getAllRequests = (req,res)=>{
         let requests = []
         data.forEach(doc => {
             requests.push({
-                requestId: doc.data().id,
+                requestId: doc.id,
                 user:doc.data().user,
                 description:doc.data().description,
                 type:doc.data().type,
